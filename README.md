@@ -6,6 +6,11 @@ This repository uses the [Azure Kinect Sensor SDK](https://github.com/microsoft/
 
 [![Build Status](https://dev.azure.com/ms/Azure_Kinect_ROS_Driver/_apis/build/status/microsoft.Azure_Kinect_ROS_Driver?branchName=melodic)](https://dev.azure.com/ms/Azure_Kinect_ROS_Driver/_build/latest?definitionId=166&branchName=melodic)
 
+## Pre-requisite Steps
+
+If you run into the issue of a "find_dependency (k4a) version mismatch (contains 3, requested 2 components)" error, follow the solution from this [issue](https://github.com/microsoft/Azure_Kinect_ROS_Driver/issues/143). It requires you to modify the config file /usr/lib/cmake/k4abt/k4abtConfig.cmake so that it matches 1.x to 1.x.x (where x are your driver versions).
+
+
 ## Features
 
 This ROS node outputs a variety of sensor data, including:
